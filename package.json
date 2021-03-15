@@ -1,0 +1,23 @@
+{
+  "name": "webappofnoteswithnode",
+  "version": "1.0.0",
+  "description": "Proyecto Electiva Software ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rubenmacias2/WebAppOfNotesWithNode.git"
+  },
+  "keywords": [
+    "Proyect",
+    "Notes"
+  ],
+  "author": "Cristian PLazas, Ruben Macias",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rubenmacias2/WebAppOfNotesWithNode/issues"
+  },
+  "homepage": "https://github.com/rubenmacias2/WebAppOfNotesWithNode#readme"
+}
