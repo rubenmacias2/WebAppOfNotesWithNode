@@ -22,7 +22,7 @@ router.post('/users/signup', async (req, res) => {
     const { name, email, password, confirm_password } = req.body;
     const errors = [];
     if (name <= 0 || email <= 0 || password <= 0 || confirm_password <= 0) {
-        errors.push({ text: 'HAy datos vacios' });
+        errors.push({ text: 'there is empty data' });
     }
     if (password != confirm_password) {
         errors.push({ text: "Password do not match" });
@@ -31,7 +31,7 @@ router.post('/users/signup', async (req, res) => {
         errors.push({ text: "Password must be at least 4 characters" });
     }
     if (errors.length > 0) {
-        res.render('users/signup', { errors, name, email, password, confirm_password });
+        res.render('users/signup', { errors, name, email, password });
     } else {
         const emailUser = await User.findOne({ email: email });
         if (emailUser) {

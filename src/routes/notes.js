@@ -75,6 +75,4 @@ router.delete("/notes/delete/:id", isAuthenticated, async (req, res) => {
     res.redirect("/notes");
 });
 
-
-//functions
 module.exports = router;
